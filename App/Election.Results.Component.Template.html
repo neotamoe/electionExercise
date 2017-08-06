@@ -1,0 +1,29 @@
+<h3>
+  Live Results!  Which Candidate Brings the Most Joy?
+</h3>
+
+<table class="col-sm-8 col-sm-offset-2 col-xs-12">
+  <thead>
+    <tr>
+      <th class="col-sm-1 col-xs-3"></th>
+      <th class="col-sm-2 col-xs-3">Candidate</th>
+      <th class="col-sm-2 col-xs-3">Votes</th>
+      <th class="col-sm-2 col-xs-3">% Votes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="candidate in $ctrl.candidates">
+      <td>
+        <span ng-bind="$index + 1"></span>
+      </td>
+      <td>
+        <span ng-bind="candidate.name"></span>
+      </td>
+			<td>
+				<span ng-bind="candidate.votes"></span>
+			</td>
+      <td>
+				<span ng-bind="candidate.percent"></span>
+    </tr>
+  </tbody>
+</table>

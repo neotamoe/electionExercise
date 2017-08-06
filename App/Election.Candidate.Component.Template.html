@@ -1,0 +1,26 @@
+<div>
+  <div class="col-sm-6 col-xs-12">
+    <!-- List of Candidates -->
+    <h3>Manage Candidates</h3>
+    <ol>
+      <li class="col-sm-12 col-xs-12" ng-repeat="candidate in $ctrl.candidates">
+        {{candidate.name}}
+        <button class="btn btn-primary editBtn" type="button" name="button" ng-click="$ctrl.editCandidate(candidate)">Edit Name</button>
+        <button class="btn btn-warning addImgBtn" type="button" name="button" ng-click="$ctrl.candidateImage(candidate)">Add/Edit Image</button>
+        <button class="btn btn-danger deleteBtn" type="button" name="button" ng-click="$ctrl.deleteCandidate(candidate)">Delete</button>
+      </li>
+    </ol>
+  </div>
+  <div class="col-sm-6 col-xs-12">
+    <!-- Candidate Form -->
+    <h3>Add Candidate</h3>
+    <div ng-form="$ctrl.form" id="addForm">
+      <div class="col-sm-12 col-xs-12">
+          <input class="col-sm-10 col-sm-offset-1 col-xs-12" type="text" placeholder="Enter Candidate Name" id="add" required ng-model="$ctrl.newCandidate.name"/>
+      </div>
+      <div class="col-sm-12 col-xs-12">
+        <button class="btn btn-success addBtn col-sm-10 col-sm-offset-1 col-xs-12" type="button" ng-click="$ctrl.addNewCandidate($ctrl.newCandidate)">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div>
+	<div class="col-sm-12">
+		<!--Election Results Table-->
+		<tf-election-results
+			candidates="$ctrl.candidates">
+		</tf-election-results>
+	</div>
+	<div>
+		<div>
+			<!--Vote Component-->
+			<div class="col-sm-12">
+				<tf-election-vote
+					candidates="$ctrl.candidates"
+					on-vote="$ctrl.onVote($candidate)">
+				</tf-election-vote>
+			</div>
+			<!--Candidate Component-->
+			<div class="col-sm-12">
+				<tf-election-candidate
+					candidates="$ctrl.candidates">
+				</tf-election-candidate>
+			</div>
+		</div>
+	</div>
+</div>
