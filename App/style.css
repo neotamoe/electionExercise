@@ -36,18 +36,21 @@ th {
 }
 
 img {
-  height: 80px;
+  height: 70px;
   width: auto;
   margin-right: 20px;
+  margin: auto;
+  display: block;
 }
 
 .vote {
   height: 100px;
   margin: 10px;
+  text-align: center;
 }
 
 .voteName{
-  color: white
+  color: white;
 }
 
 .deleteBtn, .editBtn, .addImgBtn {

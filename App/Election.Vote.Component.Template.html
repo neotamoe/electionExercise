@@ -3,7 +3,7 @@
 <div class="col-sm-10 col-sm-offset-2 col-xs-12">
     <!--One button for each candidate-->
     <button ng-repeat="candidate in $ctrl.candidates" class="btn btn-success col-sm-3 col-xs-12 vote" type="button" ng-click="$ctrl.castVote(candidate)">
-      <img src="{{candidate.image}}" alt="">
+      <img ng-if="candidate.image" src="{{candidate.image}}">
       <span class="text-info voteName" ng-bind="candidate.name"></span>
     </button>
 </div>

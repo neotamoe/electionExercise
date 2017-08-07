@@ -82,7 +82,7 @@
 	}  // end ElectionController
 })();  // end Election Component
 
-//Results Component
+// Results Component
 (function () {
   "use strict";
 
@@ -200,7 +200,7 @@
         candidate.name = editedName;
       };
       ctrl.candidateImage = function (candidate) {
-        var candidateImg = prompt("Add a link to an image of your candidate.", candidate.image);
+        var candidateImg = prompt("Add a link to an image of your candidate.  Use http://", candidate.image);
         candidate.image = candidateImg;
       };
       // $onInit is called once at component initialization
